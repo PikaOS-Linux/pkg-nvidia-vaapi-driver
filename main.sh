@@ -6,7 +6,7 @@ add-apt-repository ppa:kubuntu-ppa/backports
 
 # Clone Upstream
 git https://github.com/elFarto/nvidia-vaapi-driver -b v0.0.8
-cp -rvf ./debian ./nvidia-vaapi-driver
+cp -rvf ./debian ./nvidia-vaapi-driver/
 cd ./nvidia-vaapi-driver
 
 # Get build deps
