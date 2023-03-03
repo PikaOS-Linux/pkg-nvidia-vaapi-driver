@@ -12,6 +12,8 @@ cp -rvf ./debian ./nvidia-vaapi-driver/debian
 cd ./nvidia-vaapi-driver
 
 # Get build deps
+ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
+DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
 apt-get build-dep ./ -y
 
 # Build package
