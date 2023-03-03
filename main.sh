@@ -13,7 +13,6 @@ cd ./nvidia-vaapi-driver
 apt-get build-dep ./ -y
 
 # Build package
-LOGNAME=root dh_make --createorig -y -l -p nvidia-vaapi-driver_0.0.8
 dpkg-buildpackage
 
 # Move the debs to output
