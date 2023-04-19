@@ -34,7 +34,7 @@ jobs:
         if_key_exists: replace
     
     - name: Build Package
-      run: ./main.sh
+      run: ./main32.sh
 
     - name: Release Package
       run: ./release.sh
