@@ -7,26 +7,19 @@ add-apt-repository ppa:pikaos/pika
 add-apt-repository ppa:kubuntu-ppa/backports
 
 # Clone Upstream
-git clone https://github.com/elFarto/nvidia-vaapi-driver -b v0.0.8
+git clone https://github.com/elFarto/nvidia-vaapi-driver -b v0.0.9
 cp -rvf ./debian ./nvidia-vaapi-driver/
 cd ./nvidia-vaapi-driver
 
 # Get build deps
 ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
 DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
-apt-get build-dep ./ -y
-
-# Get build deps
 apt-get install build-essential -y
 apt-get install crossbuild-essential-i386 lib32gcc-11-dev -y
 apt-get build-dep ./ -y -a i386
-apt-get install python3-mako -y
 
 # Build package
 dpkg-buildpackage -a i386
-
-# Build 
--
 
 # Move the debs to output
 cd ../
