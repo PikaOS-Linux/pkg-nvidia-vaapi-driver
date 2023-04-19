@@ -1,4 +1,4 @@
-name: PikaOS Package Release
+name: PikaOS Package Release (i386)
 
 on:
   workflow_dispatch
