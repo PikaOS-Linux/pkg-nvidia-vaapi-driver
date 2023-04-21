@@ -7,7 +7,7 @@ add-apt-repository ppa:pikaos/pika
 add-apt-repository ppa:kubuntu-ppa/backports
 
 # Clone Upstream
-git clone https://github.com/elFarto/nvidia-vaapi-driver -b v0.0.9
+git clone https://github.com/elFarto/nvidia-vaapi-driver -b master
 cp -rvf ./debian ./nvidia-vaapi-driver/
 cd ./nvidia-vaapi-driver
 
