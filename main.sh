@@ -1,7 +1,7 @@
 DEBIAN_FRONTEND=noninteractive
 
 # Clone Upstream
-git clone https://github.com/elFarto/nvidia-vaapi-driver -b master
+git clone https://github.com/elFarto/nvidia-vaapi-driver -b v0.0.10
 cp -rvf ./debian ./nvidia-vaapi-driver/
 cd ./nvidia-vaapi-driver
 
@@ -9,7 +9,7 @@ cd ./nvidia-vaapi-driver
 apt-get build-dep ./ -y
 
 # Build package
-dpkg-buildpackage
+dpkg-buildpackage --no-sign
 
 # Move the debs to output
 cd ../
