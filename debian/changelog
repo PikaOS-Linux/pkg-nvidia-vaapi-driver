@@ -1,3 +1,9 @@
+nvidia-vaapi-driver (10:0.0.10-100pika1) pikauwu; urgency=medium
+
+  * Update to pikauwu
+
+ -- Ward Nakchbandi <hotrod.master@hotmail.com>  Sat, 01 Oct 2022 14:50:00 +0200
+
 nvidia-vaapi-driver (10:0.0.10-99pika1.lunar) lunar; urgency=medium
 
   * Upgrade to release 0.0.10
