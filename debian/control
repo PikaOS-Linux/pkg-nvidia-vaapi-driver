@@ -16,7 +16,7 @@ Rules-Requires-Root: no
 Package: nvidia-vaapi-driver
 Architecture: any
 Multi-Arch: same
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, switcheroo-control
 Suggests: libcuda1
 Description: VA-API implementation that uses NVDEC as a backend
  nvidia-vaapi-driver is an VA-API(Video Acceleration API)
