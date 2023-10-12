@@ -2,7 +2,7 @@
 
 # Check system for NVIDIA card and set vaapi env vars
 
-nvkernmod=$(lspci -k | grep -iEA3 '^[[:alnum:]]{2}:[[:alnum:]]{2}.*VGA|3D|DISPLAY' | grep -i nvidia)
+nvkernmod=$(lspci -nnkk | grep -A3 '\[03' | grep 'Kernel modules:' | grep -i nvidia)
 
 if [[ ! -z $nvkernmod ]]
 then
