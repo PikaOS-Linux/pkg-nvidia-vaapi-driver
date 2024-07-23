@@ -1,5 +1,7 @@
 #! /bin/bash
 
+set -e
+
 VERSION="0.0.12"
 
 export DEBIAN_FRONTEND="noninteractive"
@@ -15,7 +17,7 @@ cd ./nvidia-vaapi-driver
 apt-get build-dep ./ -y
 
 # Build package
-LOGNAME=root dh_make --createorig -y -l -p nvidia-vaapi-driver_"$VERSION" || echo "dh-make didn't go clean"
+LOGNAME=root dh_make --createorig -y -l -p nvidia-vaapi-driver_"$VERSION" || echo "dh-make: Ignoring Last Error"
 dpkg-buildpackage --no-sign
 
 # Move the debs to output
