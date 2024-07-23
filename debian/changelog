@@ -1,3 +1,9 @@
+nvidia-vaapi-driver (11:0.0.12-101pika1) pika; urgency=medium
+
+  * Update to PikaOS 4
+
+ -- Ward Nakchbandi <hotrod.master@hotmail.com>  Sat, 01 Oct 2022 14:50:00 +0200
+
 nvidia-vaapi-driver (10:0.0.10-100pika4) pikauwu; urgency=medium
 
   * Update to pikauwu
